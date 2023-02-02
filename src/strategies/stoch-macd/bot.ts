@@ -162,8 +162,14 @@ export class StochMacd extends Debut {
             this.createStochSignal(OrderType.SELL);
         }
 
-        if (this.macdSignal && this.macdSignal === this.stochSignal && !this.orders.length) {
-            await this.createOrder(this.macdSignal);
+        if (this.macdSignal) {
+            const isEqualSignals = this.macdSignal === this.stochSignal;
+            const hasOrders = this.orders.length;
+            const isShort = this.macdSignal === 'SELL' && this.stochSignal === 'SELL';
+
+            if (isEqualSignals && !hasOrders && !isShort) {
+                await this.createOrder(this.macdSignal);
+            }
         }
     }
 

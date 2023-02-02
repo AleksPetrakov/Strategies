@@ -48,15 +48,15 @@ export const TRXUSDT: StochMacdOptions = {
     currency: 'USDT',
     interval: '1min',
     amount: 98,
-    stopLoss: 3.56,
-    takeProfit: 4.85,
-    periodEmaFast: 5,
-    periodEmaSlow: 11,
-    periodSignal: 12,
-    stochPeriod: 9,
+    stopLoss: 2.93,
+    takeProfit: 4.96,
+    periodEmaFast: 7,
+    periodEmaSlow: 25,
+    periodSignal: 14,
+    stochPeriod: 17,
     stochSmaPeriod: 5,
-    signalLife: 4,
-    id: 0,
+    signalLife: 3,
+    id: 4
 };
 
 // export const TRXUSDT: StochMacdOptions = {

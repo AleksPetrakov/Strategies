@@ -15,8 +15,8 @@
         "debug": "npm run compile && npm run testing -- --ticker=BTCUSDT --bot=SpikesG --days=40",
         "gen1": "npm run compile && npm run genetic -- --bot=StochMacd --ticker=TRXUSDT --amount=100 --log --days=20 --gap=30 --gen=12 --pop=2000",
         "debug1": "npm run compile && npm run testing -- --ticker=TRXUSDT --bot=StochMacd --days=30",
-        "gen2": "npm run compile && npm run genetic -- --bot=StochMacd --ticker=TRXUSDT --amount=98 --log --days=7 --gap=1 --gen=50 --pop=1000",
-        "debug2": "npm run compile && npm run testing -- --ticker=TRXUSDT --bot=StochMacd --days=7 --gap=1",
+        "gen2": "npm run compile && npm run genetic -- --bot=StochMacd --ticker=TRXUSDT --amount=98 --log --days=7 --gap=4 --gen=12 --pop=1000 --olhc",
+        "debug2": "npm run compile && npm run testing -- --ticker=TRXUSDT --bot=StochMacd --log --days=30 --gap=4 --olhc",
         "getAccountId": "ts-node ./src/tools/getAccountId.ts"
     },
     "author": "Dmitry Yurov",
