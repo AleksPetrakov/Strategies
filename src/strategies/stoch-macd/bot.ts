@@ -5,6 +5,13 @@ import { virtualTakesPlugin, VirtualTakesOptions } from '@debut/plugin-virtual-t
 import { FigureType, ReportPluginAPI } from '@debut/plugin-report';
 import { statsPlugin, StatsPluginAPI } from '@debut/plugin-stats';
 
+// const TelegramBot = require('node-telegram-bot-api');
+//
+// const token = '6149622234:AAGYUCvaKB7bUXdIXZUVQwa2brc5qxSkEzw';
+//
+// // Create a bot that uses 'polling' to fetch new updates
+// const bot = new TelegramBot(token, { polling: true });
+
 export interface StochMacdOptions extends DebutOptions, VirtualTakesOptions {
     // macd
     periodEmaFast: number;

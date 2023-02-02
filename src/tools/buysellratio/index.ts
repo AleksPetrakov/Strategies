@@ -35,6 +35,7 @@ const datasetBuySlow = [];
 const datasetProfit = [];
 const datasetOrders = [];
 const logOrder = (string: string, stream: string) => {
+    console.log('my log is here');
     if (stream === 'deals') {
         datasetOrders.push(string);
     }
